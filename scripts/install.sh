@@ -22,3 +22,6 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 echo "Installing asdf with Node LTS..."
 ~/.dotfiles/scripts/asdf-node.sh
+
+echo "Changing default shell..."
+chsh -s $(which zsh)
