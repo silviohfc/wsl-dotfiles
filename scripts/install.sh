@@ -22,6 +22,3 @@ ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 
 echo "Instaling ASDF..."
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-
-echo "Changing default shell to ZSH..."
-chsh -s $(which zsh)
