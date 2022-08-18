@@ -1,4 +1,9 @@
 #!/bin/bash
+echo "Creating Symlinks..."
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
+
 echo "Installing Oh My Zsh..."
 ~/.dotfiles/scripts/ohmyzsh.sh
 
