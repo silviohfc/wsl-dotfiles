@@ -1,9 +1,4 @@
 #!/bin/bash
-echo "Creating Symlinks..."
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-
 echo "Installing Oh My Zsh..."
 ~/.dotfiles/scripts/ohmyzsh.sh
 
@@ -19,6 +14,11 @@ echo "Configuring GIT..."
 export GIT_EMAIL
 export GIT_NAME
 ~/.dotfiles/scripts/gitconfig.sh
+
+echo "Creating Symlinks..."
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 echo "Installing asdf with Node LTS..."
 ~/.dotfiles/scripts/asdf-node.sh
