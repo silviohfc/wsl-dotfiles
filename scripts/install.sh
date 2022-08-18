@@ -20,8 +20,5 @@ ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 
-echo "Installing asdf with Node LTS..."
-~/.dotfiles/scripts/asdf-node.sh
-
 echo "Changing default shell..."
 chsh -s $(which zsh)
