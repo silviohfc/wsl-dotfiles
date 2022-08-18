@@ -14,3 +14,6 @@ echo "Configuring GIT..."
 export GIT_EMAIL
 export GIT_NAME
 ~/.dotfiles/scripts/gitconfig.sh
+
+echo "Installing asdf with Node LTS..."
+~/.dotfiles/scripts/asdf-node.sh
